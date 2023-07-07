@@ -3665,8 +3665,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 160,
+        "x": 260,
+        "y": 220,
         "wires": [
             [
                 "7a391dbccb71e336"
@@ -3686,8 +3686,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 180,
+        "x": 500,
+        "y": 260,
         "wires": []
     }
 ]
