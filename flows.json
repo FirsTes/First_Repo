@@ -3689,5 +3689,51 @@
         "x": 500,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "9be7058180ee27b6",
+        "type": "inject",
+        "z": "aa7afdcd3d2c3827",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World!",
+        "payloadType": "str",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "441d361572427dbe"
+            ]
+        ]
+    },
+    {
+        "id": "441d361572427dbe",
+        "type": "debug",
+        "z": "aa7afdcd3d2c3827",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 360,
+        "wires": []
     }
 ]
