@@ -1,0 +1,3693 @@
+[
+    {
+        "id": "aa7afdcd3d2c3827",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b1a98c30763b5afb",
+        "type": "subflow",
+        "name": "Data Storage and Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "14979602a88873df"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "9388e69388431bd2",
+        "type": "subflow",
+        "name": "Load System Config",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "8ffb2d6c3669fc83"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1120,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "e51fc48624c84b51",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0956170d3e244bca",
+        "type": "subflow",
+        "name": "Load Equipment Config",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3e6f102717f1bb0c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "cb1df9712debd1c2",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 300,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "3e6f102717f1bb0c",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0d1883d3a3301ac6",
+        "type": "subflow",
+        "name": "Sampling Engine",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "e359182541590206"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 840,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "45772277a0e6e038",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "59f11f483389ccf2",
+        "type": "subflow",
+        "name": "Contact Instr - Record Results",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "d3ec6bcafefa4981"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7e3f625c99c4236f",
+        "type": "subflow",
+        "name": "Get Config File",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "ace80160bd8bc374"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 760,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "acae3192247dd353",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "85b28ab7b542bb92",
+        "type": "subflow",
+        "name": "Data Storage and Display (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "d997273f57327d41"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "065c673b124b8cda",
+        "type": "subflow",
+        "name": "Operations Engine",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "6a46598803236a92"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1240,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "bae55613168737c0",
+                        "port": 0
+                    },
+                    {
+                        "id": "1fc1ba7d4274cb10",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "9e4bbd67b50b663e",
+        "type": "subflow",
+        "name": "Load Personality",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "e11e0693a52910df"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0fa4b29618b7e99e",
+        "type": "subflow",
+        "name": "Store System Config",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "024b018751b3d8b1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 660,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b1e047df0e13d1cf",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "902edb0ce241c1c7",
+        "type": "subflow",
+        "name": "Clear Old Process",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "dfb7a0b498ff77db"
+                    },
+                    {
+                        "id": "f8cf1783f462708f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 460,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "dfb7a0b498ff77db",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "16aa475ce6940f82",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "c473558e968caf83",
+        "type": "subflow",
+        "name": "Equipment Export",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "90b7b12175e87368"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "90b7b12175e87368",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "73a7c9e073e4bb16",
+        "type": "subflow",
+        "name": "Load System Config (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "f105496e692ee64e"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1120,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "675132c330eee5c5",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "bd5c0f2c07a66807",
+        "type": "subflow",
+        "name": "Load Equipment Config (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "c0fce501bd2c8f96"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "66d84518b04887e7",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 300,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "c0fce501bd2c8f96",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7570037c6e814747",
+        "type": "subflow",
+        "name": "Contact Instr - Record Results (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "ab5877f15c01d5c8"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "927ce3f56ada3d96",
+        "type": "subflow",
+        "name": "Data Storage and Display (3)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "7591dff5d743636d"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "6b86c57d56f775b7",
+        "type": "subflow",
+        "name": "Operations Engine (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "18b6293c1d554e64"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1240,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b0d6b591b966cc88",
+                        "port": 0
+                    },
+                    {
+                        "id": "d55f6b03c17deeea",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1273fef0470655fd",
+        "type": "subflow",
+        "name": "Store System Config (2)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "11446466428ac90c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 660,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "4f0815b6db5338ab",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "784d48e62b6503d7",
+        "type": "subflow",
+        "name": "Data Storage and Display (4)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 20,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "e7dff24d969779bc"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "90538324a29cd159",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "98a36026fa034ed7",
+        "type": "ui_group",
+        "name": "INVERTERS CONTROLS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b3fc9f23ffc0124f",
+        "type": "ui_group",
+        "name": "BLOOM COMMANDS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d0331adf8ad3d7c1",
+        "type": "ui_tab",
+        "name": "Bloom_Controls",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c9ca829f823a9ef3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9b82e2e2619a76a6",
+        "type": "mqtt-broker",
+        "name": "Opto",
+        "broker": "192.168.0.13",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "361609095f9ed0f2",
+        "type": "ui_group",
+        "name": "DI-WATER TANK/STEAM",
+        "tab": "821fe29a0066bc90",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59ef7181b67a38a1",
+        "type": "ui_group",
+        "name": "BLOOM",
+        "tab": "821fe29a0066bc90",
+        "order": 3,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b6b0f51ce5a8fb4",
+        "type": "ui_group",
+        "name": "CONDENSER/OUTPUT",
+        "tab": "93a04f501ad44e33",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2511718a5803bf2e",
+        "type": "ui_group",
+        "name": "HEAT TRACE",
+        "tab": "93a04f501ad44e33",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba9785aa273ffde3",
+        "type": "ui_group",
+        "name": "AC/DC POWER",
+        "tab": "93a04f501ad44e33",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b21bf2ef3f58adee",
+        "type": "ui_group",
+        "name": "FLAME DET. / CTRL / INV TEMP",
+        "tab": "93a04f501ad44e33",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b33eebaa9557a373",
+        "type": "ui_group",
+        "name": "BOILER",
+        "tab": "821fe29a0066bc90",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ddab4173f93c536",
+        "type": "ui_group",
+        "name": "STATES",
+        "tab": "46c77058e7c8b135",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "821fe29a0066bc90",
+        "type": "ui_tab",
+        "name": "Bloom Display #2",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "93a04f501ad44e33",
+        "type": "ui_tab",
+        "name": "Bloom Display #1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "46c77058e7c8b135",
+        "type": "ui_tab",
+        "name": "Alarms Display",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1814db8440f857a9",
+        "type": "ui_group",
+        "name": "ALARMS #1",
+        "tab": "46c77058e7c8b135",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "96cf6405232c93dc",
+        "type": "ui_group",
+        "name": "ALARMS #2",
+        "tab": "46c77058e7c8b135",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0878c9722cc94cd3",
+        "type": "ui_group",
+        "name": "ALARMS CONTROL",
+        "tab": "46c77058e7c8b135",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aafa041e1f13cb20",
+        "type": "ui_group",
+        "name": "INVERTERS TEMP",
+        "tab": "46c77058e7c8b135",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "242ceb35d93e8a4c",
+        "type": "ui_group",
+        "name": "INVERTERS VOLTAGE / SETPOINT",
+        "tab": "46c77058e7c8b135",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2d683414be1ef01",
+        "type": "ui_group",
+        "name": "INVERTERS CURRENTS / OFFSETS",
+        "tab": "46c77058e7c8b135",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3969bd7868372d9d",
+        "type": "postgresdb",
+        "z": "b1a98c30763b5afb",
+        "hostname": "192.168.0.98",
+        "port": "5432",
+        "db": "hte",
+        "ssl": false
+    },
+    {
+        "id": "1539cb9fd4c34bf0",
+        "type": "postgresdb",
+        "hostname": "192.168.0.98",
+        "port": "5432",
+        "db": "hte",
+        "ssl": false
+    },
+    {
+        "id": "708e4d9cbee407eb",
+        "type": "groov-io-device",
+        "address": "localhost",
+        "msgQueueFullBehavior": "DROP_OLD"
+    },
+    {
+        "id": "0ed5ae66b22a4259",
+        "type": "ui_group",
+        "name": "Flows",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "52cb5f6081732d67",
+        "type": "ui_group",
+        "name": "Graph",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1bfbc36260900169",
+        "type": "ui_group",
+        "name": "Power",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5c4043c29ea241a9",
+        "type": "ui_group",
+        "name": "Steam Flow",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c12fea1f813ad010",
+        "type": "postgresdb",
+        "hostname": "192.168.0.30",
+        "port": "5432",
+        "db": "htetest",
+        "ssl": false
+    },
+    {
+        "id": "539d1683487f207d",
+        "type": "ui_group",
+        "name": "SplashScreenButton",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "64f86515ee9faff4",
+        "type": "ui_group",
+        "name": "INVERTER1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "badf94779878721e",
+        "type": "ui_group",
+        "name": "INVERTER 3",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3de63bfe46ba7e9a",
+        "type": "ui_group",
+        "name": "INVERTER 4",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "065eb62bd440e86e",
+        "type": "ui_group",
+        "name": "INVERTER 5",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9c2021862c60ae77",
+        "type": "ui_group",
+        "name": "INVERTER 5 (SINK)",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "58aa2cf0479b6bd7",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ef26bbde3207ca5b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.30",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4bfabf22dec3aaec",
+        "type": "ui_group",
+        "name": "INVERTER2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26e4bb69ac45b591",
+        "type": "ui_group",
+        "name": "INVERTER3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "373fe6baec6371ba",
+        "type": "ui_group",
+        "name": "INVERTER4",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa7a5811d31d89a3",
+        "type": "ui_group",
+        "name": "INVERTER5",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d318f7cb729f501e",
+        "type": "postgresdb",
+        "z": "85b28ab7b542bb92",
+        "hostname": "192.168.0.37",
+        "port": "5432",
+        "db": "htetest",
+        "ssl": false
+    },
+    {
+        "id": "13e5a4ec1dce05d1",
+        "type": "ui_group",
+        "name": "ALARMS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ac36d6b257c462ac",
+        "type": "ui_group",
+        "name": "ACTIVE OPERATION",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f7d99da6e450f62c",
+        "type": "ui_group",
+        "name": "STATES",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9b6909226bb5e5ef",
+        "type": "ui_group",
+        "name": "Weight Screen",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "cea4e912f1fd3eab",
+        "type": "ui_group",
+        "name": "BLOOM CTRL",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8e2052173b3ce35a",
+        "type": "ui_group",
+        "name": "BLOOM \"WRITE\"",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ae3c8e2adaf531ec",
+        "type": "ui_group",
+        "name": "BLOOM \"READ\"",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "25ead2f77a207536",
+        "type": "ui_tab",
+        "name": "Splash Screen",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ce0d49b6a73ea51f",
+        "type": "ui_group",
+        "name": "Select Mode",
+        "tab": "25ead2f77a207536",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6281be47d483b42d",
+        "type": "ui_tab",
+        "name": "Bloom_Configuration",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8ddd515f2249c807",
+        "type": "ui_group",
+        "name": "Dev/Tools",
+        "tab": "6281be47d483b42d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61065771fdf54dd8",
+        "type": "ui_group",
+        "name": "BLOOM #2",
+        "tab": "821fe29a0066bc90",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a8c9759502b26854",
+        "type": "ui_group",
+        "name": "OPTO/INVERTER CONTROLS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e4568d560e3d073c",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "93a04f501ad44e33",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ab5311a0eaaa748a",
+        "type": "postgresdb",
+        "z": "85b28ab7b542bb92",
+        "hostname": "192.168.0.98",
+        "port": "5432",
+        "db": "hte",
+        "ssl": false
+    },
+    {
+        "id": "fb46502a1775e113",
+        "type": "ui_group",
+        "name": "MANUAL CONTROLS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dc79d5b55565c9e0",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Stabiliti5",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.245",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "240",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "a086098ebe64d434",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Heat_Trace",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.11",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "even",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": false,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "c31fb4b1548962b4",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Stabilit5",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.245",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "240",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "0533558a268e5421",
+        "type": "modbus-client",
+        "d": true,
+        "name": "FrameD",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.1",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "19200",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "67be8bfa82196cb0",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Bender",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.2",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "even",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "57a4f2bbae06dfee",
+        "type": "groov-io-device",
+        "address": "localhost",
+        "msgQueueFullBehavior": "DROP_OLD"
+    },
+    {
+        "id": "79c2bf84e932efd2",
+        "type": "ui_group",
+        "name": "Flows",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "52c8f95c2cb91619",
+        "type": "ui_group",
+        "name": "Graph",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7571ec4b9118834a",
+        "type": "ui_group",
+        "name": "Power",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "60032839761ba42d",
+        "type": "ui_group",
+        "name": "Steam Flow",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cd1abd32be59da7a",
+        "type": "postgresdb",
+        "hostname": "192.168.0.30",
+        "port": "5432",
+        "db": "htetest",
+        "ssl": false
+    },
+    {
+        "id": "11146734b41e0630",
+        "type": "ui_group",
+        "name": "SplashScreenButton",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "9df227c31fabc92f",
+        "type": "ui_group",
+        "name": "INVERTER1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "668d9eab6a9454e9",
+        "type": "ui_group",
+        "name": "INVERTER 3",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0622f8e1d0c06610",
+        "type": "ui_group",
+        "name": "INVERTER 4",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ab79f7d1aa2e736",
+        "type": "ui_group",
+        "name": "INVERTER 5",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cae4548aea72a49a",
+        "type": "ui_group",
+        "name": "INVERTER 5 (SINK)",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c63169b8e93bf19e",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c90720ec62ea5422",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.30",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1ab527438681031f",
+        "type": "ui_group",
+        "name": "INVERTER2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "82d308269b612ede",
+        "type": "ui_group",
+        "name": "INVERTER3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "31eeb69b210b80ce",
+        "type": "ui_group",
+        "name": "INVERTER4",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a2d06bf79e509e7",
+        "type": "ui_group",
+        "name": "INVERTER5",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7492409445e0bdd3",
+        "type": "postgresdb",
+        "z": "927ce3f56ada3d96",
+        "hostname": "192.168.0.37",
+        "port": "5432",
+        "db": "htetest",
+        "ssl": false
+    },
+    {
+        "id": "80b7c1c020424e26",
+        "type": "ui_group",
+        "name": "ALARMS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eea4780edd48bb8d",
+        "type": "ui_group",
+        "name": "ACTIVE OPERATION",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2311aaffe7907885",
+        "type": "ui_group",
+        "name": "STATES",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61fa4419eaacbbd4",
+        "type": "ui_group",
+        "name": "Weight Screen",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "980aa639c5ca7917",
+        "type": "ui_group",
+        "name": "BLOOM CTRL",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "513b51ae99129903",
+        "type": "ui_group",
+        "name": "BLOOM \"WRITE\"",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fce298a287db4a97",
+        "type": "ui_group",
+        "name": "BLOOM \"READ\"",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85bc95f10e239363",
+        "type": "ui_tab",
+        "name": "Splash Screen",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bd7ad256766aef77",
+        "type": "ui_group",
+        "name": "Select Mode",
+        "tab": "85bc95f10e239363",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d5902d077a205c27",
+        "type": "ui_tab",
+        "name": "Bloom_Configuration",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "02f6d07c8220c5b9",
+        "type": "ui_group",
+        "name": "Dev/Tools",
+        "tab": "d5902d077a205c27",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6bc9525441022c9f",
+        "type": "ui_group",
+        "name": "BLOOM #2",
+        "tab": "821fe29a0066bc90",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c87d57d1fe3042fa",
+        "type": "ui_group",
+        "name": "OPTO/INVERTER CONTROLS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0a69312af0253608",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "93a04f501ad44e33",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "e5cefd50b11366fc",
+        "type": "postgresdb",
+        "z": "927ce3f56ada3d96",
+        "hostname": "192.168.0.98",
+        "port": "5432",
+        "db": "hte",
+        "ssl": false
+    },
+    {
+        "id": "e18b104298ef13cb",
+        "type": "ui_group",
+        "name": "MANUAL CONTROLS",
+        "tab": "d0331adf8ad3d7c1",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db70cafd4cf682a1",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Stabiliti5",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.245",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "240",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "759fe67be409d37d",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Heat_Trace",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.11",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "even",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": false,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "601af8266419ecad",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Stabilit5",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.0.245",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "240",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "fb364dddf159a048",
+        "type": "modbus-client",
+        "d": true,
+        "name": "FrameD",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.1",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "19200",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "deb172d6250686a4",
+        "type": "modbus-client",
+        "d": true,
+        "name": "Bender",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttySerMod0.2",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "even",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "2a1b1377ad16ede3",
+        "type": "postgresdb",
+        "z": "784d48e62b6503d7",
+        "hostname": "192.168.0.98",
+        "port": "5432",
+        "db": "hte",
+        "ssl": false
+    },
+    {
+        "id": "14979602a88873df",
+        "type": "json",
+        "z": "b1a98c30763b5afb",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "dce2edb42639ac51"
+            ]
+        ]
+    },
+    {
+        "id": "dce2edb42639ac51",
+        "type": "function",
+        "z": "b1a98c30763b5afb",
+        "name": "Live Data Update",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\nLiveData = global.get('LiveData')\n//Check to see if it's a local instrument\nfor (var instr in EquipmentReturn)\n    {\n            {\n            if (!LiveData.hasOwnProperty(instr)) //add instrument if not present\n                    {\n                        LiveData[instr] = {}\n                    }\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                if (!LiveData[instr].hasOwnProperty(tagnum))  //add tagnum if not present\n                    {\n                        LiveData[instr][tagnum] = {}\n                    }\n                LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n                }   \n            }\n    }\nglobal.set('LiveData', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0fee1e92c33410b5",
+        "type": "subflow:7e3f625c99c4236f",
+        "z": "9388e69388431bd2",
+        "name": "Config Filename Getter",
+        "env": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "e4190ab1c880a523"
+            ]
+        ]
+    },
+    {
+        "id": "e4190ab1c880a523",
+        "type": "subflow:0fa4b29618b7e99e",
+        "z": "9388e69388431bd2",
+        "name": "Store System Config",
+        "env": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "e51fc48624c84b51"
+            ]
+        ]
+    },
+    {
+        "id": "e51fc48624c84b51",
+        "type": "subflow:0956170d3e244bca",
+        "z": "9388e69388431bd2",
+        "name": "",
+        "env": [],
+        "x": 930,
+        "y": 180,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8ffb2d6c3669fc83",
+        "type": "subflow:902edb0ce241c1c7",
+        "z": "9388e69388431bd2",
+        "name": "Clear Old Process",
+        "env": [],
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "0fee1e92c33410b5"
+            ]
+        ]
+    },
+    {
+        "id": "a48bb899800c3f52",
+        "type": "file in",
+        "z": "0956170d3e244bca",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "03b7bb7ee8ac8f38"
+            ]
+        ]
+    },
+    {
+        "id": "03b7bb7ee8ac8f38",
+        "type": "json",
+        "z": "0956170d3e244bca",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "cb1df9712debd1c2"
+            ]
+        ]
+    },
+    {
+        "id": "cb1df9712debd1c2",
+        "type": "function",
+        "z": "0956170d3e244bca",
+        "name": "Store Equipment & Groups",
+        "func": "//Load full equipment config into global variable\nFullEquipmentList = global.get('Equipment')  //pull current equip list\nEquipmentConfig = msg.payload\nEquipmentName = EquipmentConfig.EquipmentTags.EquipmentName\nFullEquipmentList[EquipmentName] = EquipmentConfig\nglobal.set('Equipment', FullEquipmentList) // push updated equip list\n\n//Initialize LiveData with equipment \nLiveData = global.get('LiveData')\nLiveData[EquipmentName] = {}\n\n//Build data channel list\nDataChannels = global.get('DataChannels')\nChannelBuild = {}\nInstrumentChannelList = []\nfor (var Channel in EquipmentConfig.Channels)\n    {\n            if(EquipmentConfig['Channels'][Channel]['Active']==true)\n                {\n                ChannelBuild = EquipmentConfig['Channels'][Channel]\n                ChannelBuild['Instrument'] = EquipmentName\n                ChannelBuild['TagNum'] = Channel\n                InstrumentChannelList.push(ChannelBuild)\n                DataChannels.push(ChannelBuild)\n                LiveData[EquipmentName][Channel] = {}\n                }\n    }\nglobal.set('DataChannels', DataChannels)\nglobal.set('LiveData', LiveData)\n\n//Add any relevant channels to the sampling list\nSamplingRates = global.get('Sampling')\nfor (var Rate in SamplingRates)\n    {   \n        if (!(SamplingRates[Rate].hasOwnProperty('Channels')))\n        {\n            SamplingRates[Rate]['Channels']={}\n        }\n        //AssociatedChannels = {}\n        FilterTopic = SamplingRates[Rate]['FilterTopic']\n        FilterKey = SamplingRates[Rate]['FilterKey']\n        for (var i = 0; i <InstrumentChannelList.length; i++)\n            {   \n                if (FilterTopic == 'Tags')\n                    {\n                        if (InstrumentChannelList[i][FilterTopic].includes(FilterKey))\n                            {\n                                if(!(SamplingRates[Rate]['Channels'].hasOwnProperty(EquipmentName)))\n                                    {\n                                        SamplingRates[Rate]['Channels'][EquipmentName] = []\n                                    }\n                                SamplingRates[Rate]['Channels'][EquipmentName].push(InstrumentChannelList[i].TagNum)\n                            }\n                    }\n                else\n                    {\n                        if (InstrumentChannelList[i][FilterTopic]==FilterKey)\n                            {\n                                if(!(SamplingRates[Rate]['Channels'].hasOwnProperty(EquipmentName)))\n                                    {\n                                        SamplingRates[Rate]['Channels'][EquipmentName] = []\n                                    }\n                                SamplingRates[Rate]['Channels'][EquipmentName].push(InstrumentChannelList[i].TagNum)\n                            }\n                    }\n            }\n    }\nglobal.set('Sampling', SamplingRates)\nreturn msg\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "604d584d2482407b",
+        "type": "exec",
+        "z": "0956170d3e244bca",
+        "command": "python3.9 /home/pesd100/SOEC-Code/Scripts/MQTT_Instrument_Server.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Start Instr Servers",
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "e661129a4d9776da"
+            ],
+            [
+                "e661129a4d9776da"
+            ],
+            [
+                "e661129a4d9776da"
+            ]
+        ]
+    },
+    {
+        "id": "f752d56e7261dbed",
+        "type": "delay",
+        "z": "0956170d3e244bca",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "604d584d2482407b"
+            ]
+        ]
+    },
+    {
+        "id": "e661129a4d9776da",
+        "type": "debug",
+        "z": "0956170d3e244bca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3e6f102717f1bb0c",
+        "type": "switch",
+        "z": "0956170d3e244bca",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Done!",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Done!",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "a48bb899800c3f52",
+                "f752d56e7261dbed"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e359182541590206",
+        "type": "function",
+        "z": "0d1883d3a3301ac6",
+        "name": "Build Sampling Engine",
+        "func": "\n\nSamplingRates = global.get('Sampling')\ncronstring = \"\"\nfor (var Rate in SamplingRates)\n    {\n    Job = {}\n    Job[\"command\"] = \"add\"\n    Job[\"name\"] = SamplingRates[Rate][\"FilterKey\"]\n    if (SamplingRates[Rate][\"Unit\"] == \"S\")\n        {\n            cronstring = \"*/\" + SamplingRates[Rate][\"Rate\"] + \" * * * * *\"\n        }\n    else if (SamplingRates[Rate][\"Unit\"] == \"M\")\n        {\n            cronstring = \"0 */\" + SamplingRates[Rate][\"Rate\"] + \" * * * *\"            \n        }\n    else\n        {\n            cronstring = \"0 0 */\" + SamplingRates[Rate][\"Rate\"] + \" * * *\"            \n        }\n    Job[\"expression\"]=cronstring\n    Job[\"payload\"] = SamplingRates[Rate][\"FilterKey\"]\n    Job[\"type\"] = \"str\"\n    msg.payload = Job\n    node.send(msg)\n    }\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "782771fcf16a9e02"
+            ]
+        ]
+    },
+    {
+        "id": "b082c1fc668c103b",
+        "type": "inject",
+        "z": "0d1883d3a3301ac6",
+        "name": "remove-all",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "remove-all",
+        "payloadType": "date",
+        "x": 140,
+        "y": 40,
+        "wires": [
+            [
+                "782771fcf16a9e02"
+            ]
+        ]
+    },
+    {
+        "id": "782771fcf16a9e02",
+        "type": "cronplus",
+        "z": "0d1883d3a3301ac6",
+        "name": "",
+        "outputField": "payload",
+        "timeZone": "",
+        "persistDynamic": false,
+        "commandResponseMsgOutput": "output1",
+        "outputs": 1,
+        "options": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "45772277a0e6e038"
+            ]
+        ]
+    },
+    {
+        "id": "45772277a0e6e038",
+        "type": "function",
+        "z": "0d1883d3a3301ac6",
+        "name": "Perform Server Read Sample",
+        "func": "SampleName = msg.payload\n\nSampling = global.get('Sampling')\nConfig = global.get('Equipment')\n\nChosenSample = Sampling[SampleName]\n\n//msg.payload = ChosenSample\n\nfor (var instr in ChosenSample.Channels)\n    {\n        InstrumentQuery = {}\n        InstrumentQuery['Channels'] = {}\n        for (var chan in ChosenSample['Channels'][instr])\n            {\n            InstrumentQuery['Channels'][ChosenSample['Channels'][instr][chan]] = \" \"\n            }\n        InstrumentQuery['Port'] = Config[instr]['EquipmentTags']['PortNum']\n        InstrumentQuery['Read/Write'] = 'R'\n        InstrumentQueryString = JSON.stringify(InstrumentQuery)\n        Topic = \"Relay/Request/\"+ instr \n        msg.payload = InstrumentQueryString\n        msg.topic = Topic\n        node.send(msg)\n    }\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3ec6bcafefa4981",
+        "type": "exec",
+        "z": "59f11f483389ccf2",
+        "command": "python3.9 /home/pesd100/SOEC-Code/Scripts/ContactInstrument.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Contact Instr",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "d618f517ccc993ed"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d618f517ccc993ed",
+        "type": "json",
+        "z": "59f11f483389ccf2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [
+                "d99582d05738a6b3"
+            ]
+        ]
+    },
+    {
+        "id": "3671fd1662ba0520",
+        "type": "postgres",
+        "z": "59f11f483389ccf2",
+        "postgresdb": "c12fea1f813ad010",
+        "name": "",
+        "output": false,
+        "outputs": false,
+        "x": 880,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d99582d05738a6b3",
+        "type": "function",
+        "z": "59f11f483389ccf2",
+        "name": "Data Storage",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\ndbString = \"INSERT INTO hte VALUES \\( \\'\"\nLiveData = global.get('LiveDataStore')\n\n\n\nfor (var instr in EquipmentReturn)\n    {\n       for (var tagnum in EquipmentReturn[instr])\n            {\n            value = EquipmentReturn[instr][tagnum]['Value']\n            time = EquipmentReturn[instr][tagnum]['Time']\n            units = config[instr]['Channels'][tagnum]['Units']\n            sqlstring = dbString + time + '\\', \\'' + instr + '\\', \\'' + tagnum + '\\', ' + value + ', \\'' + units + '\\' \\)'\n            msg.payload = sqlstring\n            node.send(msg)\n            LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n            }\n        //LiveData[instr] = EquipmentReturn[instr]\n    }\nglobal.set('LiveDataStore', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 80,
+        "wires": [
+            [
+                "3671fd1662ba0520"
+            ]
+        ]
+    },
+    {
+        "id": "ace80160bd8bc374",
+        "type": "exec",
+        "z": "7e3f625c99c4236f",
+        "command": "hostname",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "acae3192247dd353"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "acae3192247dd353",
+        "type": "function",
+        "z": "7e3f625c99c4236f",
+        "name": "",
+        "func": "hostname = msg.payload\n\nmsg.filename = \"/home/pesd100/SOEC-Code/Config/\" + hostname.replace(/[\\n\\r]/g, '') + \"-Config.json\"\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d997273f57327d41",
+        "type": "json",
+        "z": "85b28ab7b542bb92",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "65040395f286761c",
+                "ad5c1d06eeb5f1a6"
+            ]
+        ]
+    },
+    {
+        "id": "f30788db1268897c",
+        "type": "postgres",
+        "z": "85b28ab7b542bb92",
+        "postgresdb": "c12fea1f813ad010",
+        "name": "",
+        "output": false,
+        "outputs": false,
+        "x": 720,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "65040395f286761c",
+        "type": "function",
+        "z": "85b28ab7b542bb92",
+        "name": "Data Storage",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\ndbString = \"INSERT INTO hte VALUES \\( \\'\"\nfor (var instr in EquipmentReturn)\n    {\n        if (config.hasOwnProperty(instr)){\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                value = EquipmentReturn[instr][tagnum]['Value']\n                if (typeof value == \"boolean\")\n                    {value = Number(value)}\n                //else if(value == \"null\")\n                //    {value = NaN}\n                time = EquipmentReturn[instr][tagnum]['Time']\n                units = config[instr]['Channels'][tagnum]['Units']\n                sqlstring = dbString + time + '\\', \\'' + instr + '\\', \\'' + tagnum + '\\', ' + value + ', \\'' + units + '\\' \\)'\n                msg.payload = sqlstring\n                node.send(msg)\n                }\n            }\n    }\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "f30788db1268897c"
+            ]
+        ]
+    },
+    {
+        "id": "ad5c1d06eeb5f1a6",
+        "type": "function",
+        "z": "85b28ab7b542bb92",
+        "name": "Live Data Update",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\nLiveData = global.get('LiveData')\n//Check to see if it's a local instrument\nfor (var instr in EquipmentReturn)\n    {\n            {\n            if (!LiveData.hasOwnProperty(instr)) //add instrument if not present\n                    {\n                        LiveData[instr] = {}\n                    }\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                if (!LiveData[instr].hasOwnProperty(tagnum))  //add tagnum if not present\n                    {\n                        LiveData[instr][tagnum] = {}\n                    }\n                LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n                }   \n            }\n    }\nglobal.set('LiveData', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f4be8f4a94aa177",
+        "type": "postgres",
+        "z": "85b28ab7b542bb92",
+        "postgresdb": "ab5311a0eaaa748a",
+        "name": "DataServer",
+        "output": false,
+        "outputs": false,
+        "x": 730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2ce838d385eb369d",
+        "type": "function",
+        "z": "85b28ab7b542bb92",
+        "d": true,
+        "name": "",
+        "func": "msg.payload = msg.payload\nmsg.topic = \"Relay/DB-Write/Raw\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 240,
+        "wires": [
+            [
+                "8de3107eb7d5ece9"
+            ]
+        ]
+    },
+    {
+        "id": "8de3107eb7d5ece9",
+        "type": "mqtt out",
+        "z": "85b28ab7b542bb92",
+        "d": true,
+        "name": "OptoMqtt",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "90538324a29cd159",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "718969e448308d9d",
+        "type": "function",
+        "z": "065c673b124b8cda",
+        "name": "JSON-logic SystemState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"SystemStates\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){        \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n     NewState[objInstrument][objName]['Time'] = new Date();\n    }\n}\nglobal.set('SystemState', NewState)\n\nreturn msg;\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "1c0e2fa664fc1db3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1c0e2fa664fc1db3",
+        "type": "function",
+        "z": "065c673b124b8cda",
+        "name": "JSON-logic AlarmState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"AlarmStates\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){\n        var objArray = KeyArray[i].split(\"/\")\n        var objInstrument = objArray[0]\n        var objName = objArray[1]\n        if (!NewState.hasOwnProperty(objInstrument)) \n            {NewState[objInstrument] = {}}\n        if (!NewState[objInstrument].hasOwnProperty(objName)) \n            {NewState[objInstrument][objName] = {}}\n        var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n        var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n        var data = {}\n        DataKeyArray = Object.keys(dataobject)\n        for (var k in DataKeyArray)\n            {\n            if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n                //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n                {\n                var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n                var ChannelVar = ChannelArray[0]\n                var ChannelInstrument = ChannelArray[1]\n                var ChannelTagNum = ChannelArray[2]      \n                if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                    {\n                        NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                        NewState[objInstrument][objName]['Time'] = new Date();\n                        break\n                    }\n                data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n                }\n            else{\n                 data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n                }\n            }\n        NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n        NewState[objInstrument][objName]['Time'] = new Date();    \n        }\n    }\nvar AccumAlarm = null\nNewState['Alarms']['Alarm_State'] = {}\nfor (var Alarm in NewState['Alarms'])\n    {\n        if (AccumAlarm == 'E-Stop' || NewState['Alarms'][Alarm]['Value'] == 'E_Stop') {AccumAlarm = 'E-Stop'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Critical' || AccumAlarm == 'Critical') {AccumAlarm = 'Critical'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Alarm' || AccumAlarm == 'Alarm') {AccumAlarm = 'Alarm'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Warning' || AccumAlarm == 'Warning') {AccumAlarm = 'Warning'}\n        else  {AccumAlarm = null}\n    }\nNewState['Alarms']['Alarm_State']['Value'] = AccumAlarm\nNewState['Alarms']['Alarm_State']['Time'] =  new Date()\nglobal.set('AlarmState', NewState)\n\nreturn msg;\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "bae55613168737c0",
+                "807d91f0e7f80fb2",
+                "1fc1ba7d4274cb10"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "807d91f0e7f80fb2",
+        "type": "function",
+        "z": "065c673b124b8cda",
+        "d": true,
+        "name": "JSON-logic ControlState - JSON Control Method",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"Automatic_Controls\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){                \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n    NewState[objInstrument][objName]['Time'] = new Date();    \n    }\n}\nglobal.set('Automatic_Controls', NewState)\n//msg.payload = NewState\n//node.send([msg, null])\n\nmsg2 = {}\nfor (var Rule in NewState['Control'])\n    {\n        if (NewState['Control'][Rule]['Value'] != null && NewState['Control'][Rule]['Value'] != \"Unknown\")\n            {\n                for (var j in SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']])\n                    {\t\n\t\t\t\t\t\tmsg.topic = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Topic']\n\t\t\t\t\t\tif (!SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j].hasOwnProperty(\"Rule\"))\n\t\t\t\t\t\t{\n                        msg.payload = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse\n\t\t\t\t\t\t{\n\t\t\t\t\t\t//Decision tree goes here\n\t\t\t\t\t\tvar ActionRule = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Rule']\n\t\t\t\t\t\tvar Actiondataobject = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Data']\t\t\t\t\t\t\n\t\t\t\t\t\tvar Actiondata = {}\n\t\t\t\t\t\tvar ActionDataKeyArray = Object.keys(Actiondataobject)   \n\t\t\t\t\t\tfor (var h in ActionDataKeyArray)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif (typeof Actiondataobject[ActionDataKeyArray[h]] === 'string' &&  Actiondataobject[ActionDataKeyArray[h]].charAt(0) == \"$\" )\n\t\t\t\t\t\t\t\t//This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tvar ActionChannelArray = Actiondataobject[ActionDataKeyArray[h]].substring(1).split(\"/\")\n\t\t\t\t\t\t\t\tvar ActionChannelVar = ActionChannelArray[0]\n\t\t\t\t\t\t\t\tvar ActionChannelInstrument = ActionChannelArray[1]\n\t\t\t\t\t\t\t\tvar ActionChannelTagNum = ActionChannelArray[2]      \n\t\t\t\t\t\t\t\tif (!TotalVar[ActionChannelVar].hasOwnProperty(ActionChannelInstrument) || !TotalVar[ActionChannelVar][ActionChannelInstrument].hasOwnProperty(ActionChannelTagNum))\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\tActiondata[ActionDataKeyArray[h]] = TotalVar[ActionChannelVar][ActionChannelInstrument][ActionChannelTagNum]['Value']\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t\t Actiondata[ActionDataKeyArray[h]] = Actiondataobject[ActionDataKeyArray[h]]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t//\tmsg.payload = Actiondata\n\t\t\t\t\t//\tnode.send(msg, null)\t\t\t\t\t\t\n\t\t\t\t\t\tCalcVar = jsonLogicJs.apply( ActionRule, Actiondata);\t\t\n\t\t\t\t\t//\tmsg.payload = CalcVar\n\t\t\t\t\t//\tnode.send(msg, null)\n\t\t\t\t\t\tPayloadObject = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n\t\t\t\t\t\tPayloadChannelName = Object.keys(PayloadObject['Channels'])\n\t\t\t\t\t\tPayloadObject['Channels'][PayloadChannelName[0]] = CalcVar\n\t\t\t\t\t\tmsg.payload = PayloadObject\t\n\t\t\t\t\t\t}\n\t\t\t        node.send([msg, null])\n\t\t\t\t\t}\n        }\n    }\n\n\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 700,
+        "y": 320,
+        "wires": [
+            [
+                "890755eed3d94f5e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dc950e7723a32db2",
+        "type": "trigger",
+        "z": "065c673b124b8cda",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "718969e448308d9d"
+            ]
+        ]
+    },
+    {
+        "id": "bae55613168737c0",
+        "type": "function",
+        "z": "065c673b124b8cda",
+        "name": "JSON-logic ControlState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"Automatic_Controls\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){        \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n    NewState[objInstrument][objName]['Time'] = new Date();    \n    }\n}\nglobal.set('Automatic_Controls', NewState)\n\nfor (var Rule in NewState['Control'])\n    {\n        if (NewState['Control'][Rule]['Value'] != null)\n            {\n                for (var j in SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']])\n                    {\n                        msg.topic = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Topic']\n                        msg.payload = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n                        node.send(msg)\n                    }\n            }\n    }\n\n\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 1030,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "890755eed3d94f5e",
+        "type": "debug",
+        "z": "065c673b124b8cda",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1fc1ba7d4274cb10",
+        "type": "function",
+        "z": "065c673b124b8cda",
+        "name": "Data Display Collector",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n\nmsg.topic = \"Relay/Display/TotalVar\"\nmsg.payload = TotalVar\nreturn(msg)\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 1020,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a46598803236a92",
+        "type": "delay",
+        "z": "065c673b124b8cda",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "dc950e7723a32db2"
+            ]
+        ]
+    },
+    {
+        "id": "e11e0693a52910df",
+        "type": "function",
+        "z": "9e4bbd67b50b663e",
+        "name": "Get Personalities Loaded",
+        "func": "rootfilename = msg.filename\nconfig = global.get('SystemConfig')\n\nrootpath = rootfilename.substring(0, rootfilename.lastIndexOf(\"/\"))\nglobal.set('SystemPersonality', {})\n\nmsg.filename = rootpath + \"/\" + config[\"SystemTags\"][\"Personality\"]\nmsg.payload = rootpath + \"/\" + config[\"SystemTags\"][\"Personality\"]\nreturn(msg)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "a5f7a5f3d9f5b302"
+            ]
+        ]
+    },
+    {
+        "id": "a5f7a5f3d9f5b302",
+        "type": "file in",
+        "z": "9e4bbd67b50b663e",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "373feea13fd50dbd"
+            ]
+        ]
+    },
+    {
+        "id": "373feea13fd50dbd",
+        "type": "json",
+        "z": "9e4bbd67b50b663e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "a6e6e9c30f366b30"
+            ]
+        ]
+    },
+    {
+        "id": "a6e6e9c30f366b30",
+        "type": "function",
+        "z": "9e4bbd67b50b663e",
+        "name": "Store Multi-Config",
+        "func": "var SystemPersonality =  msg.payload\nglobal.set('SystemPersonality', SystemPersonality)\n\nvar rootfilename = msg.filename\nvar rootpath = rootfilename.substring(0, rootfilename.lastIndexOf(\"/\"))\n\nvar KeyArray = Object.keys(SystemPersonality['Components'])\nfor (var i in KeyArray)\n    {\n        msg.filename = rootpath + \"/\" + SystemPersonality['Components'][KeyArray[i]]\n        node.send(msg)\n    }\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "32adf79c985d65d9"
+            ]
+        ]
+    },
+    {
+        "id": "8dc8bcd4fdbb35d3",
+        "type": "function",
+        "z": "9e4bbd67b50b663e",
+        "name": "Add Traits to Personality",
+        "func": "//Write system config to global\nSystemPersonality = global.get('SystemPersonality')\nconfig = global.get('SystemConfig')\n\nPersonalityTrait = msg.payload\nKeyArray = Object.keys(PersonalityTrait)\n\nfor (var i=1; i<KeyArray.length; i++)\n    {\n        SystemPersonality[KeyArray[i]] = PersonalityTrait[KeyArray[i]]\n    }\n\n\nglobal.set('SystemPersonality', SystemPersonality)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32adf79c985d65d9",
+        "type": "file in",
+        "z": "9e4bbd67b50b663e",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "a72a97786aa73c61"
+            ]
+        ]
+    },
+    {
+        "id": "a72a97786aa73c61",
+        "type": "json",
+        "z": "9e4bbd67b50b663e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "8dc8bcd4fdbb35d3"
+            ]
+        ]
+    },
+    {
+        "id": "024b018751b3d8b1",
+        "type": "file in",
+        "z": "0fa4b29618b7e99e",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "80409c273244600a"
+            ]
+        ]
+    },
+    {
+        "id": "80409c273244600a",
+        "type": "json",
+        "z": "0fa4b29618b7e99e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "b1e047df0e13d1cf",
+                "f7b7c0b920c6eb89"
+            ]
+        ]
+    },
+    {
+        "id": "b1e047df0e13d1cf",
+        "type": "function",
+        "z": "0fa4b29618b7e99e",
+        "name": "Store Config",
+        "func": "//Write system config to global\nglobal.set('SystemConfig', msg.payload)\nconfig = global.get('SystemConfig')\n\n//Initialize global variables\nglobal.set('Equipment', {})\nglobal.set('DataChannels', [])\nglobal.set('Sampling', config[\"DataSampling\"])\nglobal.set('LiveData', {})\nglobal.set('SystemState', {})\nglobal.set('AlarmState', {})\nglobal.set('Automatic_Controls', {})\n\n//pull individual equipment config filename and send on for processing one at a time\nrootfilename = msg.filename\nrootpath = rootfilename.substring(0, rootfilename.lastIndexOf(\"/\"))\nfor (var obj in config.Equipment)\n    {\n        if (config[\"Equipment\"][obj][\"Active\"] == true)\n        {\n        msg.filename = rootpath + \"/\" + config[\"Equipment\"][obj][\"Config\"]\n        msg.payload = rootpath + \"/\" + config[\"Equipment\"][obj][\"Config\"]\n        node.send(msg)\n        }\n    }\nmsg.payload = 'Done!'\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7b7c0b920c6eb89",
+        "type": "subflow:9e4bbd67b50b663e",
+        "z": "0fa4b29618b7e99e",
+        "name": "Store Personality",
+        "env": [],
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f8cf1783f462708f",
+        "type": "exec",
+        "z": "902edb0ce241c1c7",
+        "command": "ps aux | grep python3.9 | grep -v \"grep python3.9\" | awk '{print $2}' | xargs kill -9",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Cleanup Old Session",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dfb7a0b498ff77db",
+        "type": "function",
+        "z": "902edb0ce241c1c7",
+        "name": "Clear Globals",
+        "func": "var keys = global.keys()\nfor (var i=0; i<keys.length; i++)\n    {\n        global.set(keys[i], undefined)\n    }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90b7b12175e87368",
+        "type": "function",
+        "z": "c473558e968caf83",
+        "name": "Export Equipment Message",
+        "func": "config = global.get('Equipment')\n\nEquipment = JSON.stringify(config)\n\nmsg.payload = Equipment\nmsg.topic = 'Relay/Config/Equipment'\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "844cd84ccf03e498",
+        "type": "subflow:7e3f625c99c4236f",
+        "z": "73a7c9e073e4bb16",
+        "name": "Config Filename Getter",
+        "env": [],
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "bd5563e5e568f984"
+            ]
+        ]
+    },
+    {
+        "id": "bd5563e5e568f984",
+        "type": "subflow:1273fef0470655fd",
+        "z": "73a7c9e073e4bb16",
+        "name": "Store System Config",
+        "env": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "675132c330eee5c5"
+            ]
+        ]
+    },
+    {
+        "id": "675132c330eee5c5",
+        "type": "subflow:bd5c0f2c07a66807",
+        "z": "73a7c9e073e4bb16",
+        "name": "",
+        "env": [],
+        "x": 930,
+        "y": 180,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f105496e692ee64e",
+        "type": "subflow:902edb0ce241c1c7",
+        "z": "73a7c9e073e4bb16",
+        "name": "Clear Old Process",
+        "env": [],
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "844cd84ccf03e498"
+            ]
+        ]
+    },
+    {
+        "id": "b1a385bb04ba530b",
+        "type": "file in",
+        "z": "bd5c0f2c07a66807",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "a5adf513219d681c"
+            ]
+        ]
+    },
+    {
+        "id": "a5adf513219d681c",
+        "type": "json",
+        "z": "bd5c0f2c07a66807",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "66d84518b04887e7"
+            ]
+        ]
+    },
+    {
+        "id": "66d84518b04887e7",
+        "type": "function",
+        "z": "bd5c0f2c07a66807",
+        "name": "Store Equipment & Groups",
+        "func": "//Load full equipment config into global variable\nFullEquipmentList = global.get('Equipment')  //pull current equip list\nEquipmentConfig = msg.payload\nEquipmentName = EquipmentConfig.EquipmentTags.EquipmentName\nFullEquipmentList[EquipmentName] = EquipmentConfig\nglobal.set('Equipment', FullEquipmentList) // push updated equip list\n\n//Initialize LiveData with equipment \nLiveData = global.get('LiveData')\nLiveData[EquipmentName] = {}\n\n//Build data channel list\nDataChannels = global.get('DataChannels')\nChannelBuild = {}\nInstrumentChannelList = []\nfor (var Channel in EquipmentConfig.Channels)\n    {\n            if(EquipmentConfig['Channels'][Channel]['Active']==true)\n                {\n                ChannelBuild = EquipmentConfig['Channels'][Channel]\n                ChannelBuild['Instrument'] = EquipmentName\n                ChannelBuild['TagNum'] = Channel\n                InstrumentChannelList.push(ChannelBuild)\n                DataChannels.push(ChannelBuild)\n                LiveData[EquipmentName][Channel] = {}\n                }\n    }\nglobal.set('DataChannels', DataChannels)\nglobal.set('LiveData', LiveData)\n\n//Add any relevant channels to the sampling list\nSamplingRates = global.get('Sampling')\nfor (var Rate in SamplingRates)\n    {   \n        if (!(SamplingRates[Rate].hasOwnProperty('Channels')))\n        {\n            SamplingRates[Rate]['Channels']={}\n        }\n        //AssociatedChannels = {}\n        FilterTopic = SamplingRates[Rate]['FilterTopic']\n        FilterKey = SamplingRates[Rate]['FilterKey']\n        for (var i = 0; i <InstrumentChannelList.length; i++)\n            {   \n                if (FilterTopic == 'Tags')\n                    {\n                        if (InstrumentChannelList[i][FilterTopic].includes(FilterKey))\n                            {\n                                if(!(SamplingRates[Rate]['Channels'].hasOwnProperty(EquipmentName)))\n                                    {\n                                        SamplingRates[Rate]['Channels'][EquipmentName] = []\n                                    }\n                                SamplingRates[Rate]['Channels'][EquipmentName].push(InstrumentChannelList[i].TagNum)\n                            }\n                    }\n                else\n                    {\n                        if (InstrumentChannelList[i][FilterTopic]==FilterKey)\n                            {\n                                if(!(SamplingRates[Rate]['Channels'].hasOwnProperty(EquipmentName)))\n                                    {\n                                        SamplingRates[Rate]['Channels'][EquipmentName] = []\n                                    }\n                                SamplingRates[Rate]['Channels'][EquipmentName].push(InstrumentChannelList[i].TagNum)\n                            }\n                    }\n            }\n    }\nglobal.set('Sampling', SamplingRates)\nreturn msg\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "726feced7c2c4734",
+        "type": "exec",
+        "z": "bd5c0f2c07a66807",
+        "command": "python3.9 /home/pesd100/SOEC-Code/Scripts/MQTT_Instrument_Server.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Start Instr Servers",
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "ecbe8a7d68fc0e65"
+            ],
+            [
+                "ecbe8a7d68fc0e65"
+            ],
+            [
+                "ecbe8a7d68fc0e65"
+            ]
+        ]
+    },
+    {
+        "id": "a4d64f7ffd12a9cf",
+        "type": "delay",
+        "z": "bd5c0f2c07a66807",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "726feced7c2c4734"
+            ]
+        ]
+    },
+    {
+        "id": "ecbe8a7d68fc0e65",
+        "type": "debug",
+        "z": "bd5c0f2c07a66807",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c0fce501bd2c8f96",
+        "type": "switch",
+        "z": "bd5c0f2c07a66807",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Done!",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Done!",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "b1a385bb04ba530b",
+                "a4d64f7ffd12a9cf"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ab5877f15c01d5c8",
+        "type": "exec",
+        "z": "7570037c6e814747",
+        "command": "python3.9 /home/pesd100/SOEC-Code/Scripts/ContactInstrument.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Contact Instr",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "8aa991eeb660fb0d"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8aa991eeb660fb0d",
+        "type": "json",
+        "z": "7570037c6e814747",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [
+                "01ad3f44d91bcba1"
+            ]
+        ]
+    },
+    {
+        "id": "abbe47a8cda3a5fc",
+        "type": "postgres",
+        "z": "7570037c6e814747",
+        "postgresdb": "cd1abd32be59da7a",
+        "name": "",
+        "output": false,
+        "outputs": false,
+        "x": 880,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "01ad3f44d91bcba1",
+        "type": "function",
+        "z": "7570037c6e814747",
+        "name": "Data Storage",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\ndbString = \"INSERT INTO hte VALUES \\( \\'\"\nLiveData = global.get('LiveDataStore')\n\n\n\nfor (var instr in EquipmentReturn)\n    {\n       for (var tagnum in EquipmentReturn[instr])\n            {\n            value = EquipmentReturn[instr][tagnum]['Value']\n            time = EquipmentReturn[instr][tagnum]['Time']\n            units = config[instr]['Channels'][tagnum]['Units']\n            sqlstring = dbString + time + '\\', \\'' + instr + '\\', \\'' + tagnum + '\\', ' + value + ', \\'' + units + '\\' \\)'\n            msg.payload = sqlstring\n            node.send(msg)\n            LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n            }\n        //LiveData[instr] = EquipmentReturn[instr]\n    }\nglobal.set('LiveDataStore', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 80,
+        "wires": [
+            [
+                "abbe47a8cda3a5fc"
+            ]
+        ]
+    },
+    {
+        "id": "7591dff5d743636d",
+        "type": "json",
+        "z": "927ce3f56ada3d96",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "729164b85442d20f",
+                "2e37ab839dd1021d"
+            ]
+        ]
+    },
+    {
+        "id": "63cb3a335336164b",
+        "type": "postgres",
+        "z": "927ce3f56ada3d96",
+        "postgresdb": "cd1abd32be59da7a",
+        "name": "",
+        "output": false,
+        "outputs": false,
+        "x": 720,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "729164b85442d20f",
+        "type": "function",
+        "z": "927ce3f56ada3d96",
+        "name": "Data Storage",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\ndbString = \"INSERT INTO hte VALUES \\( \\'\"\nfor (var instr in EquipmentReturn)\n    {\n        if (config.hasOwnProperty(instr)){\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                value = EquipmentReturn[instr][tagnum]['Value']\n                if (typeof value == \"boolean\")\n                    {value = Number(value)}\n                //else if(value == \"null\")\n                //    {value = NaN}\n                time = EquipmentReturn[instr][tagnum]['Time']\n                units = config[instr]['Channels'][tagnum]['Units']\n                sqlstring = dbString + time + '\\', \\'' + instr + '\\', \\'' + tagnum + '\\', ' + value + ', \\'' + units + '\\' \\)'\n                msg.payload = sqlstring\n                node.send(msg)\n                }\n            }\n    }\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "63cb3a335336164b"
+            ]
+        ]
+    },
+    {
+        "id": "2e37ab839dd1021d",
+        "type": "function",
+        "z": "927ce3f56ada3d96",
+        "name": "Live Data Update",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\nLiveData = global.get('LiveData')\n//Check to see if it's a local instrument\nfor (var instr in EquipmentReturn)\n    {\n            {\n            if (!LiveData.hasOwnProperty(instr)) //add instrument if not present\n                    {\n                        LiveData[instr] = {}\n                    }\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                if (!LiveData[instr].hasOwnProperty(tagnum))  //add tagnum if not present\n                    {\n                        LiveData[instr][tagnum] = {}\n                    }\n                LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n                }   \n            }\n    }\nglobal.set('LiveData', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2028acb92c4ce1d7",
+        "type": "postgres",
+        "z": "927ce3f56ada3d96",
+        "postgresdb": "e5cefd50b11366fc",
+        "name": "DataServer",
+        "output": false,
+        "outputs": false,
+        "x": 730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3d1334e88239ea4c",
+        "type": "function",
+        "z": "927ce3f56ada3d96",
+        "d": true,
+        "name": "",
+        "func": "msg.payload = msg.payload\nmsg.topic = \"Relay/DB-Write/Raw\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 240,
+        "wires": [
+            [
+                "0f89a65c9f6bac1e"
+            ]
+        ]
+    },
+    {
+        "id": "0f89a65c9f6bac1e",
+        "type": "mqtt out",
+        "z": "927ce3f56ada3d96",
+        "d": true,
+        "name": "OptoMqtt",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "90538324a29cd159",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2bdb1323e6014eaa",
+        "type": "function",
+        "z": "6b86c57d56f775b7",
+        "name": "JSON-logic SystemState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"SystemStates\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){        \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n     NewState[objInstrument][objName]['Time'] = new Date();\n    }\n}\nglobal.set('SystemState', NewState)\n\nreturn msg;\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "1356ccb297a01739"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1356ccb297a01739",
+        "type": "function",
+        "z": "6b86c57d56f775b7",
+        "name": "JSON-logic AlarmState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"AlarmStates\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){\n        var objArray = KeyArray[i].split(\"/\")\n        var objInstrument = objArray[0]\n        var objName = objArray[1]\n        if (!NewState.hasOwnProperty(objInstrument)) \n            {NewState[objInstrument] = {}}\n        if (!NewState[objInstrument].hasOwnProperty(objName)) \n            {NewState[objInstrument][objName] = {}}\n        var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n        var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n        var data = {}\n        DataKeyArray = Object.keys(dataobject)\n        for (var k in DataKeyArray)\n            {\n            if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n                //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n                {\n                var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n                var ChannelVar = ChannelArray[0]\n                var ChannelInstrument = ChannelArray[1]\n                var ChannelTagNum = ChannelArray[2]      \n                if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                    {\n                        NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                        NewState[objInstrument][objName]['Time'] = new Date();\n                        break\n                    }\n                data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n                }\n            else{\n                 data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n                }\n            }\n        NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n        NewState[objInstrument][objName]['Time'] = new Date();    \n        }\n    }\nvar AccumAlarm = null\nNewState['Alarms']['Alarm_State'] = {}\nfor (var Alarm in NewState['Alarms'])\n    {\n        if (AccumAlarm == 'E-Stop' || NewState['Alarms'][Alarm]['Value'] == 'E_Stop') {AccumAlarm = 'E-Stop'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Critical' || AccumAlarm == 'Critical') {AccumAlarm = 'Critical'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Alarm' || AccumAlarm == 'Alarm') {AccumAlarm = 'Alarm'}\n        else if (NewState['Alarms'][Alarm]['Value'] == 'Warning' || AccumAlarm == 'Warning') {AccumAlarm = 'Warning'}\n        else  {AccumAlarm = null}\n    }\nNewState['Alarms']['Alarm_State']['Value'] = AccumAlarm\nNewState['Alarms']['Alarm_State']['Time'] =  new Date()\nglobal.set('AlarmState', NewState)\n\nreturn msg;\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "b0d6b591b966cc88",
+                "b5d75b835f74bcb4",
+                "d55f6b03c17deeea"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b5d75b835f74bcb4",
+        "type": "function",
+        "z": "6b86c57d56f775b7",
+        "d": true,
+        "name": "JSON-logic ControlState - JSON Control Method",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"Automatic_Controls\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){                \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n    NewState[objInstrument][objName]['Time'] = new Date();    \n    }\n}\nglobal.set('Automatic_Controls', NewState)\n//msg.payload = NewState\n//node.send([msg, null])\n\nmsg2 = {}\nfor (var Rule in NewState['Control'])\n    {\n        if (NewState['Control'][Rule]['Value'] != null && NewState['Control'][Rule]['Value'] != \"Unknown\")\n            {\n                for (var j in SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']])\n                    {\t\n\t\t\t\t\t\tmsg.topic = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Topic']\n\t\t\t\t\t\tif (!SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j].hasOwnProperty(\"Rule\"))\n\t\t\t\t\t\t{\n                        msg.payload = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n\t\t\t\t\t\t}\n\t\t\t\t\t\telse\n\t\t\t\t\t\t{\n\t\t\t\t\t\t//Decision tree goes here\n\t\t\t\t\t\tvar ActionRule = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Rule']\n\t\t\t\t\t\tvar Actiondataobject = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Data']\t\t\t\t\t\t\n\t\t\t\t\t\tvar Actiondata = {}\n\t\t\t\t\t\tvar ActionDataKeyArray = Object.keys(Actiondataobject)   \n\t\t\t\t\t\tfor (var h in ActionDataKeyArray)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\tif (typeof Actiondataobject[ActionDataKeyArray[h]] === 'string' &&  Actiondataobject[ActionDataKeyArray[h]].charAt(0) == \"$\" )\n\t\t\t\t\t\t\t\t//This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\tvar ActionChannelArray = Actiondataobject[ActionDataKeyArray[h]].substring(1).split(\"/\")\n\t\t\t\t\t\t\t\tvar ActionChannelVar = ActionChannelArray[0]\n\t\t\t\t\t\t\t\tvar ActionChannelInstrument = ActionChannelArray[1]\n\t\t\t\t\t\t\t\tvar ActionChannelTagNum = ActionChannelArray[2]      \n\t\t\t\t\t\t\t\tif (!TotalVar[ActionChannelVar].hasOwnProperty(ActionChannelInstrument) || !TotalVar[ActionChannelVar][ActionChannelInstrument].hasOwnProperty(ActionChannelTagNum))\n\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\tActiondata[ActionDataKeyArray[h]] = TotalVar[ActionChannelVar][ActionChannelInstrument][ActionChannelTagNum]['Value']\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telse{\n\t\t\t\t\t\t\t\t Actiondata[ActionDataKeyArray[h]] = Actiondataobject[ActionDataKeyArray[h]]\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t//\tmsg.payload = Actiondata\n\t\t\t\t\t//\tnode.send(msg, null)\t\t\t\t\t\t\n\t\t\t\t\t\tCalcVar = jsonLogicJs.apply( ActionRule, Actiondata);\t\t\n\t\t\t\t\t//\tmsg.payload = CalcVar\n\t\t\t\t\t//\tnode.send(msg, null)\n\t\t\t\t\t\tPayloadObject = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n\t\t\t\t\t\tPayloadChannelName = Object.keys(PayloadObject['Channels'])\n\t\t\t\t\t\tPayloadObject['Channels'][PayloadChannelName[0]] = CalcVar\n\t\t\t\t\t\tmsg.payload = PayloadObject\t\n\t\t\t\t\t\t}\n\t\t\t        node.send([msg, null])\n\t\t\t\t\t}\n        }\n    }\n\n\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 700,
+        "y": 320,
+        "wires": [
+            [
+                "792e78f0146ae610"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d32c0b01c78bc979",
+        "type": "trigger",
+        "z": "6b86c57d56f775b7",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "2bdb1323e6014eaa"
+            ]
+        ]
+    },
+    {
+        "id": "b0d6b591b966cc88",
+        "type": "function",
+        "z": "6b86c57d56f775b7",
+        "name": "JSON-logic ControlState",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n/*          Process State Logic                        */\nvar NewState = {}\nvar LogicVar = \"Automatic_Controls\"\nvar KeyArray = Object.keys(SystemPersonality[LogicVar])\n \nfor (var i in KeyArray)\n    {\n    if (SystemPersonality[LogicVar][KeyArray[i]]['Active'] == true){        \n    var objArray = KeyArray[i].split(\"/\")\n    var objInstrument = objArray[0]\n    var objName = objArray[1]\n    if (!NewState.hasOwnProperty(objInstrument)) \n        {NewState[objInstrument] = {}}\n    if (!NewState[objInstrument].hasOwnProperty(objName)) \n        {NewState[objInstrument][objName] = {}}\n    var rule = SystemPersonality[LogicVar][KeyArray[i]][\"Rule\"]\n    var dataobject =  SystemPersonality[LogicVar][KeyArray[i]][\"Data\"]\n    var data = {}\n    DataKeyArray = Object.keys(dataobject)\n    for (var k in DataKeyArray)\n        {\n        if (typeof dataobject[DataKeyArray[k]] === 'string' &&  dataobject[DataKeyArray[k]].charAt(0) == \"$\" )\n            //This is referencing one of the global variables (LiveData, SystemState, AlarmState)\n            {\n            var ChannelArray = dataobject[DataKeyArray[k]].substring(1).split(\"/\")\n            var ChannelVar = ChannelArray[0]\n            var ChannelInstrument = ChannelArray[1]\n            var ChannelTagNum = ChannelArray[2]      \n            if (!TotalVar[ChannelVar].hasOwnProperty(ChannelInstrument) || !TotalVar[ChannelVar][ChannelInstrument].hasOwnProperty(ChannelTagNum))\n                {\n                    NewState[objInstrument][objName]['Value'] = \"Unknown\"\n                    NewState[objInstrument][objName]['Time'] = new Date();\n                    break\n                }\n            data[DataKeyArray[k]] = TotalVar[ChannelVar][ChannelInstrument][ChannelTagNum]['Value']\n            }\n        else{\n             data[DataKeyArray[k]] = dataobject[DataKeyArray[k]]\n            }\n        }\n    NewState[objInstrument][objName]['Value'] = jsonLogicJs.apply( rule, data);\n    NewState[objInstrument][objName]['Time'] = new Date();    \n    }\n}\nglobal.set('Automatic_Controls', NewState)\n\nfor (var Rule in NewState['Control'])\n    {\n        if (NewState['Control'][Rule]['Value'] != null)\n            {\n                for (var j in SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']])\n                    {\n                        msg.topic = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Topic']\n                        msg.payload = SystemPersonality['Control_Methods'][NewState['Control'][Rule]['Value']][j]['Payload']\n                        node.send(msg)\n                    }\n            }\n    }\n\n\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 1030,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "792e78f0146ae610",
+        "type": "debug",
+        "z": "6b86c57d56f775b7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d55f6b03c17deeea",
+        "type": "function",
+        "z": "6b86c57d56f775b7",
+        "name": "Data Display Collector",
+        "func": "var SystemPersonality = global.get('SystemPersonality')\nvar TotalVar = {}\nTotalVar['SystemState'] = global.get('SystemState')\nTotalVar['AlarmState'] = global.get('AlarmState')\nTotalVar['Automatic_Controls'] = global.get('Automatic_Controls')\nTotalVar['LiveData'] = global.get('LiveData')\n\n\nmsg.topic = \"Relay/Display/TotalVar\"\nmsg.payload = TotalVar\nreturn(msg)\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsonLogicJs",
+                "module": "json-logic-js"
+            }
+        ],
+        "x": 1020,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18b6293c1d554e64",
+        "type": "delay",
+        "z": "6b86c57d56f775b7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "d32c0b01c78bc979"
+            ]
+        ]
+    },
+    {
+        "id": "11446466428ac90c",
+        "type": "file in",
+        "z": "1273fef0470655fd",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "c0248be318fa83c6"
+            ]
+        ]
+    },
+    {
+        "id": "c0248be318fa83c6",
+        "type": "json",
+        "z": "1273fef0470655fd",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "4f0815b6db5338ab",
+                "7501d918f5695127"
+            ]
+        ]
+    },
+    {
+        "id": "4f0815b6db5338ab",
+        "type": "function",
+        "z": "1273fef0470655fd",
+        "name": "Store Config",
+        "func": "//Write system config to global\nglobal.set('SystemConfig', msg.payload)\nconfig = global.get('SystemConfig')\n\n//Initialize global variables\nglobal.set('Equipment', {})\nglobal.set('DataChannels', [])\nglobal.set('Sampling', config[\"DataSampling\"])\nglobal.set('LiveData', {})\nglobal.set('SystemState', {})\nglobal.set('AlarmState', {})\nglobal.set('Automatic_Controls', {})\n\n//pull individual equipment config filename and send on for processing one at a time\nrootfilename = msg.filename\nrootpath = rootfilename.substring(0, rootfilename.lastIndexOf(\"/\"))\nfor (var obj in config.Equipment)\n    {\n        if (config[\"Equipment\"][obj][\"Active\"] == true)\n        {\n        msg.filename = rootpath + \"/\" + config[\"Equipment\"][obj][\"Config\"]\n        msg.payload = rootpath + \"/\" + config[\"Equipment\"][obj][\"Config\"]\n        node.send(msg)\n        }\n    }\nmsg.payload = 'Done!'\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7501d918f5695127",
+        "type": "subflow:9e4bbd67b50b663e",
+        "z": "1273fef0470655fd",
+        "name": "Store Personality",
+        "env": [],
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e7dff24d969779bc",
+        "type": "json",
+        "z": "784d48e62b6503d7",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "cd6ec4d3130d80b8"
+            ]
+        ]
+    },
+    {
+        "id": "cd6ec4d3130d80b8",
+        "type": "function",
+        "z": "784d48e62b6503d7",
+        "name": "Live Data Update",
+        "func": "EquipmentReturn = msg.payload\nconfig = global.get('Equipment')\nLiveData = global.get('LiveData')\n//Check to see if it's a local instrument\nfor (var instr in EquipmentReturn)\n    {\n            {\n            if (!LiveData.hasOwnProperty(instr)) //add instrument if not present\n                    {\n                        LiveData[instr] = {}\n                    }\n            for (var tagnum in EquipmentReturn[instr])\n                {\n                if (!LiveData[instr].hasOwnProperty(tagnum))  //add tagnum if not present\n                    {\n                        LiveData[instr][tagnum] = {}\n                    }\n                LiveData[instr][tagnum] = EquipmentReturn[instr][tagnum]\n                }   \n            }\n    }\nglobal.set('LiveData', LiveData)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d206c8a6ea5757fe",
+        "type": "inject",
+        "z": "aa7afdcd3d2c3827",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "7a391dbccb71e336"
+            ]
+        ]
+    },
+    {
+        "id": "7a391dbccb71e336",
+        "type": "debug",
+        "z": "aa7afdcd3d2c3827",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 180,
+        "wires": []
+    }
+]
